@@ -20,6 +20,7 @@ const handleIncrement=()=>{
 
 const  handleDecrement=()=>{
   let Count=count-1;
+  if(Count<0)return
   localStorage.setItem('count',JSON.stringify(Count));
   setCount(Count);
 }
@@ -27,7 +28,7 @@ const  handleDecrement=()=>{
 const handleReset = ()=>{
   let resetCount = 0;
   localStorage.setItem("count",JSON.stringify(resetCount))
-  setcount(resetCount);
+  setCount(resetCount);
 }
 
 useEffect(()=>{
