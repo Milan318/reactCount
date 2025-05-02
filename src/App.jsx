@@ -35,7 +35,7 @@ useEffect(()=>{
         <h1 className="mb-4">Counter App</h1>
         <div className="btn-group" role="group" aria-label="Counter controls">
           <button className="btn btn-danger fs-4" onClick={handleDecrement}>-</button>
-          <button className="btn btn-light disabled fs-3">{count}</button>
+          <h2 className="fs-1 px-5">{count}</h2>
           <button className="btn btn-success fs-4" onClick={handleIncrement}>+</button>
         </div>
       </div>
